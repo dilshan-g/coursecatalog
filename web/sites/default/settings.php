@@ -249,7 +249,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'fyWhrI_Tr8ORuMAxmnMA6O5N9OZuNT4FjHZXZlcS5MC3RDK3MOqmRweXGdrs6TcIluiD8wJfQA';
 
 /**
  * Deployment identifier.
@@ -766,6 +766,13 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  * Keep this code block at the end of this file to take full effect.
  */
 
-if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-  include $app_root . '/' . $site_path . '/settings.local.php';
+// Set site and environment specific settings.
+$settings_file = DRUPAL_ROOT . "/sites/default/settings/settings.local.php";
+if (file_exists($settings_file)) {
+  require $settings_file;
 }
+
+// Include the services files for this environment.
+$settings['container_yamls'][] = $app_root . '/' . $site_path . "/settings/services.local.yml";
+
+$settings["config_sync_directory"] = '../config/default';
