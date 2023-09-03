@@ -1,0 +1,4 @@
+services:
+  example.default:
+    class: Drupal\course_catalog\HttpService
+    arguments: ["@http_client"]

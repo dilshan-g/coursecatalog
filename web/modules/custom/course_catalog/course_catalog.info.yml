@@ -1,0 +1,6 @@
+name: Course catalog
+description: Creates a page to display the course catalog.
+package: Custom
+
+type: module
+core_version_requirement: ^9.5 || ^10
