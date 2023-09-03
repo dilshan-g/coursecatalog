@@ -1,0 +1,22 @@
+uuid: 195a5614-add6-4b41-8719-9883762c7ffc
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - dawn
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: dawn_help
+theme: dawn
+region: header
+weight: 3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

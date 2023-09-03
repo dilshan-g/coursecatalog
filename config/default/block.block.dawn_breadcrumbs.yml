@@ -1,0 +1,22 @@
+uuid: dcf3046e-6d8e-44c7-84a3-8b8aaad61863
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - dawn
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: dawn_breadcrumbs
+theme: dawn
+region: header
+weight: 2
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

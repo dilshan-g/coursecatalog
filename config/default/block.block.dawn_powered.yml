@@ -1,0 +1,22 @@
+uuid: c12fd6a2-074e-43f8-ba93-fcc6a60e2695
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dawn
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: dawn_powered
+theme: dawn
+region: footer
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

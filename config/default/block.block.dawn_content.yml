@@ -1,0 +1,22 @@
+uuid: d860ee44-de15-4e51-950f-cef32568b6e8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dawn
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: dawn_content
+theme: dawn
+region: content
+weight: -6
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

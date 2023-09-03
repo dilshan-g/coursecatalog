@@ -1,0 +1,23 @@
+uuid: 5fc10fff-af08-4ca2-91d6-4d93aa39f936
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - dawn
+_core:
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: dawn_search_form_narrow
+theme: dawn
+region: header
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

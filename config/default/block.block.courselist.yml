@@ -1,0 +1,25 @@
+uuid: 80c9e1b4-8603-4423-b49a-74b6c8b0828c
+langcode: en
+status: true
+dependencies:
+  module:
+    - course_catalog
+    - system
+  theme:
+    - dawn
+id: courselist
+theme: dawn
+region: highlighted
+weight: -7
+provider: null
+plugin: course_list
+settings:
+  id: course_list
+  label: 'Our Courses'
+  label_display: visible
+  provider: course_catalog
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /courses
