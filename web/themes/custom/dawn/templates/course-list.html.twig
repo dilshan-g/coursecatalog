@@ -6,19 +6,21 @@
           <h2>{{ item.courseName }}</h2>
         </div>
         <div class="course-teaser-body">
-          <div>
-            {% for key,value in item.courseFeatures %}
-              <strong> {{ value.value }}</strong><br>
-            {% endfor %}
+          <div class="features">
+            <ul>
+              {% for key,value in item.courseFeatures %}
+                <li>{{ source(base_path ~ directory ~ '/images/tick.svg') }} <span>{{ value.value }}</span></li>
+              {% endfor %}
+            </ul>
           </div>
-          <div>
-            <label>{{ item.courseDuration }} months (part-time)</label>
-            <label>
-              ${{ item.courseFee }} {% if item.isFeeHelpAvailable == 'true' %}(per unit FEE HELP available){% endif %}
-            </label>
-            <label>{{ item.noOfModules }} units</label>
+          <div class="attributes">
+            <ul>
+              <li>{{ source(base_path ~ directory ~ '/images/calendar.svg') }} {{ item.courseDuration }} months (part-time)</li>
+              <li>{{ source(base_path ~ directory ~ '/images/dollar.svg') }} ${{ item.courseFee }} {% if item.isFeeHelpAvailable == 'true' %}(per unit FEE HELP available){% endif %}</li>
+              <li>{{ source(base_path ~ directory ~ '/images/monitor.svg') }} {{ item.noOfModules }} units</li>
+            </ul>
           </div>
-          <div>
+          <div class="links">
             <a href="{{ item.partnerInformation[1].value }}">
               <img src="{{ item.partnerInformation[2].value ? item.partnerInformation[2].value : base_path ~ directory ~ '/images/UTS.png' }}"
                    alt="{{ item.partnerInformation[0].value }}">
