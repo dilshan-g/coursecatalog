@@ -1,3 +1,24 @@
+## Course catalog module
+
+This Drupal module reads data from an external source using Guzzle http client.
+The http client service has been injected into a block plugin in order to display the external JSON source on the Drupal template.
+
+* Custom module path: `web/modules/custom/course_catalog`
+  * Block plugin: `web/modules/custom/course_catalog/src/Plugin/Block/CourseList.php`
+  * Http service class: `web/modules/custom/course_catalog/src/HttpService.php`
+  * Update hook to create the `/course` page: `web/modules/custom/course_catalog/course_catalog.post_update.php`
+* Custom theme path: `web/themes/custom/dawn`
+
+Final output on the Drupal frontend
+
+![screenshot.png](web%2Fthemes%2Fcustom%2Fdawn%2Fscreenshot.png)
+
+### TODO: (Unfinished tasks)
+
+1. Add a CSS compiler to better organise the CSS
+2. Make the design pixel perfect to match the given design
+
+---------------------------------------------------------------------------------------------------------------
 # Docksal powered Drupal 9 With Composer Installation
 
 This is a sample Drupal 9 with Composer installation pre-configured for use with Docksal.
