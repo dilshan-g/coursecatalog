@@ -1,5 +1,8 @@
 ## Course catalog module
 
+**Note: Please note that the custom components for this task written on top of Docksal web development environment. Because I forked the Docksal project and setup locally, it's showing the Docksal contributed as contributors of this project.**
+
+
 This Drupal module reads data from an external source using Guzzle http client.
 The http client service has been injected into a block plugin in order to display the external JSON source on the Drupal template.
 
