@@ -1,0 +1,34 @@
+{% if data.courses %}
+  <div class="course-catalog">
+    {% for item in data.courses %}
+      <div class="course-teaser">
+        <div class="course-teaser-title">
+          <h2>{{ item.courseName }}</h2>
+        </div>
+        <div class="course-teaser-body">
+          <div>
+            {% for key,value in item.courseFeatures %}
+              <strong> {{ value.value }}</strong><br>
+            {% endfor %}
+          </div>
+          <div>
+            <label>{{ item.courseDuration }} months (part-time)</label>
+            <label>
+              ${{ item.courseFee }} {% if item.isFeeHelpAvailable == 'true' %}(per unit FEE HELP available){% endif %}
+            </label>
+            <label>{{ item.noOfModules }} units</label>
+          </div>
+          <div>
+            <a href="{{ item.partnerInformation[1].value }}">
+              <img src="{{ item.partnerInformation[2].value ? item.partnerInformation[2].value : base_path ~ directory ~ '/images/UTS.png' }}"
+                   alt="{{ item.partnerInformation[0].value }}">
+            </a>
+            <a href="https://www.mysite.edu.au/contact">
+              <button>Enquire</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}

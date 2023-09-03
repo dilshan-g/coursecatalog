@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function course_catalog_theme() {
+  return [
+    'course_list' => [
+      'variables' => [
+        'data' => [],
+      ],
+    ],
+  ];
+}

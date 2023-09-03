@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * Implements hook_preprocess().
+ */
+function dawn_preprocess(&$variables, $hook) {
+  $variables['base_path'] = base_path();
+}

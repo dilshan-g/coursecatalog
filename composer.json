@@ -14,7 +14,9 @@
         "drupal/core-composer-scaffold": "^9.5",
         "drupal/core-project-message": "^9.5",
         "drupal/core-recommended": "^9.5",
-        "drush/drush": "^11"
+        "drush/drush": "^11",
+        "guzzlehttp/guzzle": "~6.0",
+        "ext-json": "*"
     },
     "conflict": {
         "drupal/drupal": "*"

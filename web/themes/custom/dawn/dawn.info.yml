@@ -1,0 +1,5 @@
+name: Dawn
+type: theme
+description: 'A basic theme for displaying courses.'
+core_version_requirement: ^9 || ^10
+base theme: olivero
